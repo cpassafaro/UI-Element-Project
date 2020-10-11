@@ -96,6 +96,7 @@ function setTiles(searchTerm, element) {
 
 function setActions(searchTerm, element) {
     element.addEventListener('click', () =>{
+        emptyImage.src = ``
         //url for gardens
         let url = `https://www.googleapis.com/books/v1/volumes?q=subject:${searchTerm}`
         //fetch request to populate the books information
