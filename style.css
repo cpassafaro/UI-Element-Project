@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: black;
+    color: white;
+    height:40px;
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Modal {
+    margin-left: 60px;
+}
+.grid-container{
+    box-sizing:border-box;
+    display:grid;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 14% 14% 14% 14% 14% 14%;
+    justify-content: center;
+    margin-top: 4%;
+    object-fit: cover;
+
+}
+.grid{
+    border: 6px solid white;
+    display:flex;
+    justify-content: center;;
+    align-items: center;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: large;
+    color:white;
+    font-weight: 900;
+    object-fit: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.modal {
+  /* margin:0; */
+  display:none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  max-width: 100%;
+  height: 400px;
+  max-height: 100%;
+  z-index: 1010;
+  background:white;
+}
+
+.modal-guts{
+    margin:0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:inline;
+    /* spacing as needed */
+    /* padding: 20px 50px 20px 20px; */
+  
+    /* let it scroll */
+    /* overflow: auto; */
+}
+
+.modal-overlay{
+  display:none;
+  background-color: gray;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.modal-container{
+    margin:0;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right:2px;
+}
+
+.book-information {
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    padding-left:7px;
+    padding-top:5px;
+}
+.exit{
+    background:none;
+    border:none;
+    float:right;
+    padding-top:4px;
+    font-weight: bold;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+.author{
+    font-size:14px;
+    padding-bottom: 15px;
+    /* padding: 5px; */
+}
+.description{
+    font-size:14px;
+    padding-bottom: 5px;
+    overflow-y: auto;
+    height: 240px;
+    /* padding: 5px; */
+}
+
+.modal-image{
+    /* width:400px; */
+    object-fit: contain;
+    object-position: center;
+    padding:80px 60px 60px 60px;
+}
+
