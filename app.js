@@ -46,7 +46,7 @@ let allTiles = [{
         search: 'clothing',
         element: document.querySelector('.image9')
     },{
-        search:'suvival',
+        search:'autobiography',
         element: document.querySelector('.image10')
     },{
         search: 'fantasy',
